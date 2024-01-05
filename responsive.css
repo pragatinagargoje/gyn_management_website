@@ -1,0 +1,127 @@
+
+/* Responsive style for about id */
+
+@media only screen and (min-width: 768px) {
+    .row {
+        justify-content: space-between;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 48%;
+    }
+}
+
+/* Additional Media Query for Smaller Screens (Mobile) */
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .contact-left,
+    .contact-right {
+        width: 100%;
+      
+    }
+  
+    .sub-title {
+        font-size: 20px;
+    }
+  
+    .contact-left p {
+        font-size: 12px;
+    }
+  }
+
+  .menu-button {
+    display: block; /* Show the menu button by default */
+
+}
+
+
+@media only screen and (min-width: 769px) {
+    .menu-button {
+        display: none; /* Hide the menu button on larger screens */
+    }
+}
+.sidebar {
+    display: none; /* Hide sidebar by default */
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: flex; /* Display sidebar on smaller screens */
+    }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .text-center h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+
+    .card h2 {
+        font-size: 18px;
+    }
+    .text-center h1{
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+}
+/* Add this CSS at the end of your existing stylesheet or in a separate file */
+
+@media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-right {
+        margin-top: 20px;
+    }
+
+    form[name="submit-to-google-sheet"] input,
+    form[name="submit-to-google-sheet"] textarea,
+    form[name="submit-to-google-sheet"] button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 600px){
+   
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .columnlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .columnlist > div {
+        width: 30%; }
+    
+    
+    
+    
+}
